@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="200.0" maxWidth="400.0" minHeight="200.0" minWidth="400.0" prefHeight="265.0" prefWidth="400.0" stylesheets="@/css/dark-theme.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="auction.ui.apply.ApplyController">
+    <JFXTextField fx:id="txfTerm" labelFloat="true" layoutX="71.0" layoutY="38.0" prefHeight="33.0" prefWidth="258.0" promptText="Term" AnchorPane.leftAnchor="71.0" AnchorPane.rightAnchor="71.0" AnchorPane.topAnchor="38.0">
+        <font>
+            <Font size="16.0" />
+        </font>
+    </JFXTextField>
+    <JFXButton fx:id="btnApply" layoutX="71.0" layoutY="122.0" onAction="#handleApplyButtonAction" prefHeight="40.0" prefWidth="90.0" styleClass="login-button" text="Apply" AnchorPane.leftAnchor="71.0" AnchorPane.rightAnchor="239.0" />
+    <JFXButton layoutX="211.0" layoutY="122.0" onAction="#handleCancelButtonAction" prefHeight="40.0" prefWidth="90.0" styleClass="login-button" text="Cancel" AnchorPane.leftAnchor="211.0" />
+</AnchorPane>
