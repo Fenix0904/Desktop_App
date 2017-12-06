@@ -36,7 +36,7 @@
             <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
                   <JFXListView fx:id="userJFXListView" layoutX="23.0" layoutY="61.0" prefHeight="314.0" prefWidth="559.0" AnchorPane.bottomAnchor="27.0" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="61.0" />
-                  <JFXButton fx:id="btnGetAllUsers" layoutX="38.0" layoutY="23.0" onAction="#load" prefHeight="25.0" prefWidth="102.0" text="Get users" AnchorPane.rightAnchor="492.0" AnchorPane.topAnchor="23.0" />
+                  <JFXButton fx:id="btnGetContracts" layoutX="38.0" layoutY="23.0" onAction="#load" prefHeight="25.0" prefWidth="102.0" text="Get contracts" AnchorPane.rightAnchor="492.0" AnchorPane.topAnchor="23.0" />
                   <JFXButton fx:id="btnApplyContract" layoutX="225.0" layoutY="23.0" onAction="#load" prefHeight="25.0" prefWidth="106.0" text="New Contract" />
                   <JFXButton fx:id="logOut" layoutX="442.0" layoutY="23.0" prefHeight="25.0" prefWidth="96.0" text="Logout" />
                </children>

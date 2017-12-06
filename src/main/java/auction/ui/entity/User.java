@@ -1,38 +1,48 @@
 package auction.ui.entity;
 
-import java.util.List;
 
+import java.util.Set;
 
 public class User {
 
-
     private int id;
+    private String name;
 
 
     private String username;
 
-    transient private String password;
+    private String password;
 
-    transient private String confirmPassword;
+    private String confirmPassword;
 
-    transient private Role role;
-
-
-    private String name;
-
-
-    transient private List<Bid> bids;
+    private Set<Role> roles;
 
     public User() {
     }
 
-    public User(String name) {
+    public User(final int id) {
         this();
-        this.name = name;
+        this.id = id;
+    }
+
+    public void setConfirmPassword(String confirmPassword) {
+        this.confirmPassword = confirmPassword;
     }
 
     public int getId() {
         return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getUsername() {
@@ -51,36 +61,30 @@ public class User {
         this.password = password;
     }
 
-    public Role getRole() {
-        return role;
-    }
-
-    public void setRole(Role role) {
-        this.role = role;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public List<Bid> getBids() {
-        return bids;
-    }
-
-    public void setBids(List<Bid> bids) {
-        this.bids = bids;
-    }
-
     public String getConfirmPassword() {
         return confirmPassword;
     }
 
-    public void setConfirmPassword(String confirmPassword) {
-        this.confirmPassword = confirmPassword;
+    public Set<Role> getRoles() {
+        return roles;
     }
 
+    public void setRoles(Set<Role> roles) {
+        this.roles = roles;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        User user = (User) o;
+
+        return id == user.id;
+    }
+
+    @Override
+    public int hashCode() {
+        return id;
+    }
 }

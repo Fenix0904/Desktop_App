@@ -1,7 +1,7 @@
 package auction.ui.entity;
 
-import java.util.Set;
 
+import java.util.Set;
 
 public class Role {
 
@@ -10,7 +10,6 @@ public class Role {
 
 
     private String name;
-
 
     private Set<User> users;
 
